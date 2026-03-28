@@ -48,7 +48,7 @@ const MachineryDetail = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="sticky top-32"
+              className="lg:sticky lg:top-32 "
             >
               <img 
                 src={machine.img} 
