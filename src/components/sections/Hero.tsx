@@ -8,7 +8,7 @@ const Hero = () => {
     <section id="home" className="relative h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000" 
+          src="/hero-img.png" 
           alt="Heavy Machinery" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

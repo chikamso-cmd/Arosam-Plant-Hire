@@ -19,9 +19,10 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 bg-white/5 hover:bg-primary hover:text-secondary transition-all rounded-full flex items-center justify-center">
+                <Link to="" key={i} href="#" className="w-10 h-10 bg-white/5 hover:bg-primary hover:text-secondary transition-all rounded-full flex items-center justify-center">
                   <Icon className="w-4 h-4" />
-                </a>
+                  
+                </Link>
               ))}
             </div>
           </div>
@@ -53,11 +54,11 @@ const Footer = () => {
               </li>
               <li className="flex gap-4">
                 <Phone className="text-primary w-5 h-5 shrink-0" />
-                <span>+8801714457298</span>
+                <span>(234)8067944013, (234)8051017610</span>
               </li>
               <li className="flex gap-4">
                 <Mail className="text-primary w-5 h-5 shrink-0" />
-                <span>riaadarif@gmail.com</span>
+                <span>arosam2@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -65,7 +66,7 @@ const Footer = () => {
       </div>
       
       <div className="border-t border-white/5 py-8 text-center text-white/40 text-xs font-bold uppercase tracking-widest">
-        Copyright © 2023 - Developed by Riaad Arif.
+        Copyright © {new Date().getFullYear()} - Arosam Plant & Hire.
       </div>
     </footer>
   );

@@ -44,7 +44,7 @@ const Services = () => {
             <motion.div 
               key={i}
               whileHover={{ y: -10 }}
-              className="bg-white p-10 shadow-sm border-b-4 border-transparent hover:border-primary transition-all text-center"
+              className="bg-white p-10 shadow-sm border-b-4 border-transparent hover:border-green-600 transition-all text-center cursor-pointer"
             >
               <div className="text-primary mb-6 flex justify-center">{service.icon}</div>
               <h4 className="text-xl font-black mb-4 uppercase">{service.title}</h4>

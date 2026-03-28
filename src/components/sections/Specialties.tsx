@@ -4,17 +4,17 @@ import { HardHat, ArrowRight } from 'lucide-react';
 const Specialties = () => {
   const specialties = [
     { 
-      img: "https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=800", 
+      img: "/public/excavating.jpg", 
       tag: "Industrial", 
-      title: "Mining Contractor" 
+      title: "Excavating of Land" 
     },
     { 
-      img: "https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&q=80&w=800", 
+      img: "/public/demolish.jpg", 
       tag: "Construction", 
       title: "Property Demolition" 
     },
     { 
-      img: "https://images.unsplash.com/photo-1533991505870-28687e4924a1?auto=format&fit=crop&q=80&w=800", 
+      img: "/public/clearing.jpg", 
       tag: "City Service", 
       title: "Road Clearing" 
     }

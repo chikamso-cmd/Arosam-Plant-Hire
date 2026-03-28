@@ -43,7 +43,7 @@ const MachineryList: React.FC<MachineryListProps> = ({ limit, showTitle = true }
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 right-4 bg-primary text-secondary text-[10px] font-bold px-3 py-1 uppercase">
+                <div className="absolute top-4 right-4 bg-green-600 text-white text-[10px] font-bold px-3 py-1 uppercase rounded-sm">
                   {machine.specs[0].val} | {machine.specs[1].val}
                 </div>
               </div>

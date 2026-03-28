@@ -9,7 +9,7 @@ import VideoCTA from '../components/sections/VideoCTA';
 import Prospecting from '../components/sections/Prospecting';
 import Testimonials from '../components/sections/Testimonials';
 import Partners from '../components/sections/Partners';
-import BlogSection from '../components/sections/BlogSection';
+// import BlogSection from '../components/sections/BlogSection';
 import ContactSection from '../components/sections/ContactSection';
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
       <Prospecting />
       <Testimonials />
       <Partners />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <ContactSection />
     </>
   );

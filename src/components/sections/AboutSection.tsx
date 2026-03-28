@@ -46,7 +46,7 @@ const AboutSection = () => {
               "Industry leading safety"
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
-                <CheckCircle2 className="text-primary w-5 h-5" />
+                <CheckCircle2 className="text-green-500 w-5 h-5" />
                 <span className="text-sm font-semibold text-secondary">{item}</span>
               </div>
             ))}

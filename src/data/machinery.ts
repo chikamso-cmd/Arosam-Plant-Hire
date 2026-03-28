@@ -6,7 +6,7 @@ export const machines: Machine[] = [
     name: "CAT 320 GC Excavator",
     desc: "High-performance hydraulic excavator for heavy-duty digging and lifting tasks.",
     fullDesc: "The Cat® 320 GC Excavator balances productivity with easy-to-use technology features, a new comfortable cab, reduced fuel consumption by up to 20%, and lower maintenance costs by up to 25% to bring you a durable, low-cost-per-hour excavator for your applications.",
-    img: "https://images.unsplash.com/photo-1579412691525-28b5278b7155?auto=format&fit=crop&q=80&w=1000",
+    img: "/public/CAT-320-GC.jpg",
     specs: [
       { label: "Engine Power", val: "107 kW" },
       { label: "Operating Weight", val: "21,900 kg" },
@@ -20,7 +20,7 @@ export const machines: Machine[] = [
     name: "D6 Dozer",
     desc: "Powerful bulldozer designed for earthmoving and site preparation with maximum efficiency.",
     fullDesc: "The D6 Dozer is a versatile machine that delivers the power and precision needed for a wide range of tasks, from heavy dozing to fine grading. Its advanced powertrain and hydraulic systems ensure maximum productivity and fuel efficiency.",
-    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1000",
+    img: "/public/hero-img.png",
     specs: [
       { label: "Engine Power", val: "161 kW" },
       { label: "Operating Weight", val: "19,000 kg" },
@@ -48,7 +48,7 @@ export const machines: Machine[] = [
     name: "950M Wheel Loader",
     desc: "Versatile loader for material handling, truck loading, and general construction work.",
     fullDesc: "The Cat® 950M Wheel Loader provides significant fuel savings while lowering long-term costs. This machine is designed to be more efficient, more productive, and easier to maintain, making it a top choice for any job site.",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1000",
+    img: "/public/950m.webp",
     specs: [
       { label: "Engine Power", val: "171 kW" },
       { label: "Operating Weight", val: "19,200 kg" },

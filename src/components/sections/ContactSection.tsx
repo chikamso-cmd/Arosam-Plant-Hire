@@ -31,7 +31,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h5 className="font-black uppercase mb-1">Call Us</h5>
-                  <p className="text-gray-500 text-sm">+8801714457298</p>
+                  <p className="text-gray-500 text-sm">(234)8067944013, (234)8051017610</p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -40,7 +40,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h5 className="font-black uppercase mb-1">Email Us</h5>
-                  <p className="text-gray-500 text-sm">riaadarif@gmail.com</p>
+                  <p className="text-gray-500 text-sm">arosam2@gmail.com</p>
                 </div>
               </div>
             </div>

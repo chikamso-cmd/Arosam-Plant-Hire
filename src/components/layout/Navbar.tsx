@@ -31,8 +31,8 @@ const Navbar = () => {
     )}>
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="bg-primary p-2 rounded-sm">
-            <HardHat className="text-secondary w-6 h-6" />
+          <div className="bg-green-600 p-2 rounded-sm w-15">
+            <img src="/icon.png" alt="" className=" w-full "/>
           </div>
           <span className={cn(
             "text-2xl font-black tracking-tighter uppercase",
@@ -55,7 +55,7 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
-          <Link to="/#contact" className="btn-primary ml-4">Contact Us</Link>
+          <p  className="btn-primary ml-4 ">RC NO: 7304530</p>
         </div>
 
         <button 
