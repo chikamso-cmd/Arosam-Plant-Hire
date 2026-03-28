@@ -34,7 +34,7 @@ export const machines: Machine[] = [
     name: "745 Articulated Truck",
     desc: "Reliable off-road dump truck for transporting large volumes of material across rough terrain.",
     fullDesc: "The Cat® 745 Articulated Truck features a world-class cab design, re-engineered using global operator feedback to advance comfort and ease of operation. Improvements include new controls, transmission-protection features, hoist-assist system, and advanced traction control.",
-    img: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?auto=format&fit=crop&q=80&w=1000",
+    img: "/public/745 Articulated Truck.jpg",
     specs: [
       { label: "Payload Capacity", val: "41.0 tonnes" },
       { label: "Engine Power", val: "376 kW" },
@@ -56,5 +56,19 @@ export const machines: Machine[] = [
       { label: "Static Tipping Load", val: "12,600 kg" }
     ],
     category: "Wheel Loader"
-  }
+  },
+  {
+    id: "D8K Bulldozer",
+    name: "D8K Bulldozer",
+    desc: "The Caterpillar D8K Bulldozer is a powerful, heavy-duty machine built for demanding earthmoving and construction operations. Engineered for strength, durability, and consistent performance, the D8K remains a trusted choice for projects that require high pushing power and reliability in tough environments.",
+    fullDesc: " Performance & Power Powered by a robust turbocharged diesel engine delivering approximately 300 horsepower, the D8K is designed to handle heavy loads with ease. Its strong torque output ensures efficient performance during grading, land clearing, and large-scale material movement. Built for Heavy-Duty Work With an operating weight of over 30 tons, this bulldozer provides exceptional traction and stability across rough and uneven terrain. The crawler track system allows it to operate efficiently on soft soil, making it ideal for construction sites, mining operations, and road development projects.",
+    img: "/public/d8k.avif",
+    specs: [
+      { label: "Engine Power", val: "300 hp" },
+      { label: "Operating Weight", val: "32 tons" },
+      { label: "Bucket Capacity", val: "20.4l - 640l m³" },
+      { label: "Static Tipping Load", val: "12,600 kg" }
+    ],
+    category: "Bulldozer"
+  },
 ];

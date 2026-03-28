@@ -11,6 +11,7 @@ const Testimonials = () => {
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
+        <h1>TESTIMONIALS</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((rev, i) => (
             <div key={i} className="bg-white p-10 text-center relative group">
