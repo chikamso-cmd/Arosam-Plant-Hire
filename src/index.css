@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFC107;
+  --color-secondary: #1A1A1A;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-secondary bg-white;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-secondary font-bold py-3 px-6 rounded-sm transition-all hover:opacity-90 active:scale-95;
+  }
+
+  .section-padding {
+    @apply py-20;
+  }
+}
