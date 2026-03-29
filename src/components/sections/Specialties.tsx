@@ -4,17 +4,17 @@ import { HardHat, ArrowRight } from 'lucide-react';
 const Specialties = () => {
   const specialties = [
     { 
-      img: "/public/excavating.jpg", 
+      img: "/excavating.jpg", 
       tag: "Industrial", 
       title: "Excavating of Land" 
     },
     { 
-      img: "/public/demolish.jpg", 
+      img: "/demolish.jpg", 
       tag: "Construction", 
       title: "Property Demolition" 
     },
     { 
-      img: "/public/clearing.jpg", 
+      img: "/road.jpg", 
       tag: "City Service", 
       title: "Road Clearing" 
     }
