@@ -1,18 +1,46 @@
-import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import {useState} from "react";
+import { MapPin, Phone, Mail, Send } from "lucide-react";
 
-const ContactSection = () => {
+export default function ContactSection() {
+  const [result, setResult] = useState("");
+
+  const HandleformSubmit = async (e) => {
+    e.preventDefault();
+     setResult("Sending....");
+    const formData = new FormData(e.target);
+    formData.append("access_key", "d198d767-1254-4e77-81e3-b318b880593e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      e.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <section id="contact" className="section-padding bg-gray-50">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <span className="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Contact Us</span>
+            <span className="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">
+              Contact Us
+            </span>
             <h2 className="text-4xl md:text-5xl font-black text-secondary mb-8 leading-tight uppercase">
               Get In Touch <br /> With Our Experts
             </h2>
             <p className="text-gray-500 mb-12">
-              Have a question about our machinery or need a custom quote for your project? Fill out the form and our team will get back to you within 24 hours.
+              Have a question about our machinery or need a custom quote for
+              your project? Fill out the form and our team will get back to you
+              within 24 hours.
             </p>
 
             <div className="space-y-8">
@@ -22,7 +50,9 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h5 className="font-black uppercase mb-1">Our Location</h5>
-                  <p className="text-gray-500 text-sm">Sylhet 3100, Bangladesh</p>
+                  <p className="text-gray-500 text-sm">
+                    Sylhet 3100, Bangladesh
+                  </p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -31,7 +61,9 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h5 className="font-black uppercase mb-1">Call Us</h5>
-                  <p className="text-gray-500 text-sm">(234)8067944013, (234)8051017610</p>
+                  <p className="text-gray-500 text-sm">
+                    (234)8067944013, (234)8051017610
+                  </p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -47,26 +79,60 @@ const ContactSection = () => {
           </div>
 
           <div className="bg-white p-10 shadow-xl rounded-sm">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={HandleformSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase text-gray-400">Full Name</label>
-                  <input type="text" className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none" placeholder="John Doe" />
+                  <label className="text-xs font-bold uppercase text-gray-400">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase text-gray-400">Email Address</label>
-                  <input type="email" className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none" placeholder="john@example.com" />
+                  <label className="text-xs font-bold uppercase text-gray-400">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none"
+                    placeholder="john@example.com"
+                    required
+                  />
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase text-gray-400">Subject</label>
-                <input type="text" className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none" placeholder="Machinery Inquiry" />
+                <label className="text-xs font-bold uppercase text-gray-400">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none"
+                  placeholder="Machinery Inquiry"
+                  required
+                />
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase text-gray-400">Message</label>
-                <textarea rows={5} className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none resize-none" placeholder="How can we help you?"></textarea>
+                <label className="text-xs font-bold uppercase text-gray-400">
+                  Message
+                </label>
+                <textarea
+                  rows={5}
+                  className="w-full bg-gray-50 border-none p-4 focus:ring-2 focus:ring-primary outline-none resize-none"
+                  placeholder="How can we help you?"
+                  required
+                ></textarea>
               </div>
-              <button className="btn-primary w-full py-4 uppercase tracking-widest">Send Message</button>
+              <button className=" flex items-center justify-center gap-2 btn-primary w-full py-4 uppercase tracking-widest cursor-pointer">
+                 <Send size={18} />
+                Send Message
+              </button>
+              <span className="block text-center text-sm text-gray-400 mt-4">
+                {result}
+              </span>
             </form>
           </div>
         </div>
@@ -75,4 +141,3 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;

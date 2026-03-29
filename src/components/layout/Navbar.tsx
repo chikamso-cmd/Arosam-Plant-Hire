@@ -44,12 +44,12 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => (
-            <Link 
+            <Link  
               key={item.name} 
               to={item.href}
               className={cn(
                 "font-medium hover:text-primary transition-colors",
-                (isScrolled || !isHome) ? "text-secondary" : "text-white"
+                (isScrolled || !isHome) ? "text-secondary" : "text-white",
               )}
             >
               {item.name}

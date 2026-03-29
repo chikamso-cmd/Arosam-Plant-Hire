@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-8">
-              <div className="bg-primary p-2 rounded-sm">
-                <HardHat className="text-secondary w-6 h-6" />
+              <div className="bg-green-600 p-2 rounded-sm">
+                <img src="/public/icon.png" alt="" className="text-secondary w-10 h-10" />
               </div>
-              <span className="text-2xl font-black tracking-tighter uppercase">Arosam</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-primary">Arosam</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-8">
               Arosam Plant and Hire is a leading provider of heavy machinery and construction equipment rental services.
