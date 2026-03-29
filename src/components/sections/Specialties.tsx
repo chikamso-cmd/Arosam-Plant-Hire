@@ -14,7 +14,7 @@ const Specialties = () => {
       title: "Property Demolition" 
     },
     { 
-      img: "/road.jpg", 
+      img: "/clearing.jpg", 
       tag: "City Service", 
       title: "Road Clearing" 
     }
