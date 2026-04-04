@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ interface MachineryListProps {
   showTitle?: boolean;
 }
 
-const MachineryList: React.FC<MachineryListProps> = ({ limit, showTitle = true }) => {
+const MachineryList = ({ limit, showTitle = true }:MachineryListProps) => {
   const displayMachines = limit ? machines.slice(0, limit) : machines;
 
   return (

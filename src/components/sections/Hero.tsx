@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Hero = () => {
+export default function Hero() {
   return (
     <section id="home" className="relative h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -22,9 +22,9 @@ const Hero = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] mb-8 uppercase tracking-tighter">
+          <h1 className="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-8 uppercase tracking-tighter">
             Heavy <br />
-            <span className="text-primary">-</span>Duty <br />
+          <span className="text-primary">-</span>Duty <br />
             Machinery
           </h1>
           <Link to="/machinery" className="btn-primary inline-flex items-center gap-2 group">
@@ -52,4 +52,3 @@ const Hero = () => {
   );
 };
 
-export default Hero;

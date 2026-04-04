@@ -7,7 +7,7 @@ const VideoCTA = () => {
     <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000" 
+          src="/demolish.jpg" 
           alt="Construction Site" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

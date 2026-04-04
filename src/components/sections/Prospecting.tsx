@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'motion/react';
 
 const Prospecting = () => {
@@ -44,7 +44,7 @@ const Prospecting = () => {
             className="w-full rounded-sm"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute -bottom-10 -right-10 bg-primary w-40 h-40 rounded-full flex flex-col items-center justify-center text-center shadow-2xl border-8 border-white">
+          <div className="absolute -bottom-10 -right-3 bg-primary w-30 h-30 md:w-40 md:h-40 rounded-full flex flex-col items-center justify-center text-center shadow-2xl border-8 border-white">
             <span className="text-3xl font-black">110+</span>
             <span className="text-[10px] font-bold uppercase leading-tight">Project Done</span>
           </div>

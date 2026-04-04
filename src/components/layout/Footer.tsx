@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="border-t border-white/5 py-8 text-center text-white/40 text-xs font-bold uppercase tracking-widest">
+      <div className="border-t border-white/5 py-8 text-center text-white/40 text-xs font-bold  tracking-widest">
         Copyright © {new Date().getFullYear()} - Arosam Plant & Hire.
       </div>
     </footer>

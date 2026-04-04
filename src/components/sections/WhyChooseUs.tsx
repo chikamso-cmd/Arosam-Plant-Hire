@@ -26,10 +26,10 @@ const WhyChooseUs = () => {
 
           <div className="grid grid-cols-2 gap-y-12 gap-x-8">
             {[
-              { label: "Project Completed", val: "320+" },
-              { label: "Unique Customers", val: "732+" },
-              { label: "Equipment Fleet", val: "50+" },
-              { label: "Branch Location", val: "32+" }
+              { label: "Project Completed", val: "100+" },
+              { label: "Unique Customers", val: "72+" },
+              { label: "Equipment Fleet", val: "30+" },
+              { label: "Branch Location", val: "5+" }
             ].map((stat, i) => (
               <div key={i}>
                 <h3 className="text-4xl font-black text-primary mb-2">{stat.val}</h3>
