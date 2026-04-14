@@ -39,7 +39,7 @@ const Prospecting = () => {
 
         <div className="relative">
           <img 
-            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800" 
+            src="/prospects.jpg" 
             alt="Gold Ore" 
             className="w-full rounded-sm"
             referrerPolicy="no-referrer"

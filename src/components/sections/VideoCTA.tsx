@@ -1,28 +1,57 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { Play } from 'lucide-react';
+import { useRef, useEffect, useState } from "react";
+import { motion } from "motion/react";
+import { Pause, Play } from "lucide-react";
 
 const VideoCTA = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // slow motion
+    }
+  }, []);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
   return (
     <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/demolish.jpg" 
-          alt="Construction Site" 
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
+      {/* Video Background */}
+      <video
+        ref={videoRef}
+        src="/video.mp4" 
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-      <div className="container-custom relative z-10 text-center">
-        <motion.button 
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60 z-0" />
+
+      {/* Content */}
+      <div className="relative z-10 text-center px-4">
+        {/* Play/Pause Button */}
+        <motion.button
+          onClick={togglePlay}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-12 mx-auto shadow-2xl"
+          className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-12 mx-auto shadow-2xl text-white text-lg font-bold"
         >
-          <Play className="text-secondary fill-secondary w-8 h-8 ml-1" />
+          {isPlaying ? <Play size={18}/> : <Pause size={18}/>}
         </motion.button>
+
         <h2 className="text-4xl md:text-6xl font-black text-white uppercase leading-tight max-w-4xl mx-auto">
           Only The Brave Can Unravel Earth's Treasures
         </h2>

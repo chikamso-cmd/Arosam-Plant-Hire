@@ -9,16 +9,18 @@ const AboutSection = () => {
         <div className="relative">
           <div className="grid grid-cols-2 gap-4">
             <img 
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800" 
+              src="/lowbed.jpg" 
               alt="Worker" 
               className="rounded-sm w-full h-80 object-cover"
               referrerPolicy="no-referrer"
+              loading="lazy"
             />
             <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" 
+              src="/d166b.jpg" 
               alt="Machinery" 
               className="rounded-sm w-full h-80 object-cover mt-12"
               referrerPolicy="no-referrer"
+              loading="lazy"
             />
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary w-32 h-32 rounded-full flex flex-col items-center justify-center text-center shadow-2xl border-4 border-white">

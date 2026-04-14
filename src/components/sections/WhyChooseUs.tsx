@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const WhyChooseUs = () => {
   return (
@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
         <div className="relative">
           <div className="border-8 border-primary p-4 inline-block">
             <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" 
+              src="/choose.jpg" 
               alt="Loader" 
               className="w-full max-w-md"
               referrerPolicy="no-referrer"

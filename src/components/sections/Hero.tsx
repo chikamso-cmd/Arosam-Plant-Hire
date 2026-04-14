@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="home" className="relative h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero-img.png" 
+          src="/hero.jpg" 
           alt="Heavy Machinery" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

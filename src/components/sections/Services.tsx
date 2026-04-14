@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'motion/react';
 import { Construction, Settings, Truck, ShieldCheck } from 'lucide-react';
 
